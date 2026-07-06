@@ -2,12 +2,12 @@ group = "io.github.nekogryphou.crunchyroll.pip"
 
 patches {
     about {
-        name = "Crunchyroll PiP Patches"
+        name = "Gryphou's Morphe Patches"
         description = "Android Picture-in-Picture support patches for Crunchyroll."
-        source = "https://github.com/NekoGryphou/crunchyroll-pip-patches"
+        source = "https://github.com/NekoGryphou/gryphous-morphe-patches"
         author = "NekoGryphou"
-        contact = "na"
-        website = "https://github.com/NekoGryphou/crunchyroll-pip-patches"
+        contact = "darkosdash@gmail.com"
+        website = "https://github.com/NekoGryphou/gryphous-morphe-patches"
         license = "GPLv3"
     }
 }

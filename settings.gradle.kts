@@ -1,4 +1,4 @@
-rootProject.name = "crunchyroll-pip-patches"
+rootProject.name = "gryphous-morphe-patches"
 
 pluginManagement {
     repositories {
