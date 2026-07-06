@@ -1,4 +1,5 @@
 {
+  "name": "crunchyroll-pip-patches",
   "devDependencies": {
     "@cleyrop-org/semantic-release-backmerge": "^6.1.0",
     "@MorpheApp/changelog": "git+https://github.com/MorpheApp/changelog.git#bundle",
