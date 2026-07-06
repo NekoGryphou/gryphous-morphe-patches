@@ -1,14 +1,13 @@
-group = "app.template"
+group = "io.github.nekogryphou.crunchyroll.pip"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
+        name = "Crunchyroll PiP Patches"
+        description = "Android Picture-in-Picture support patches for Crunchyroll."
+        source = "https://github.com/NekoGryphou/crunchyroll-pip-patches"
+        author = "NekoGryphou"
         contact = "na"
-        website = "na"
+        website = "https://github.com/NekoGryphou/crunchyroll-pip-patches"
         license = "GPLv3"
     }
 }

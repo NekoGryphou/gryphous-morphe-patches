@@ -1,14 +1,12 @@
-# 👋🧩 Morphe Patches template
+# Crunchyroll PiP Patches
 
-Template repository for Morphe Patches.
+Morphe patch bundle that adds Android Picture-in-Picture support to Crunchyroll.
 
-## ❓ About
+## About
 
-Patches for apps I like.
+This repository contains a Morphe patch for `com.crunchyroll.crunchyroid` that enables the Android PiP manifest attributes on the watch activities and gates automatic PiP entry so it only runs when Crunchyroll reports active video playback.
 
-TODO: Update this about section with a brief introduction/summary about this repo and what it offers.
-
-## 🩹 Patches list
+## Patches list
 
 <!-- PATCHES_START EXPANDED -->
 
@@ -23,25 +21,16 @@ TODO: Update this about section with a brief introduction/summary about this rep
 
 &nbsp;
 
-## 🚀 Get started
+## Get started
 
-To start using this template, follow these steps:
+This repository follows the Morphe patches template workflow:
 
 1. [Setup](https://github.com/MorpheApp/morphe-documentation/blob/main/docs/morphe-development/README.md) your development environment including adding a GitHub PAT as described [here](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/2_1_setup.md#-prepare-the-environment).
-2. [Create a new repository using this template](https://github.com/new?template_name=morphe-patches-template&template_owner=MorpheApp)
-3. Enable "Allow GitHub Actions to create and approve pull requests" in your repo Settings > Actions > General > Workflow permissions
-4. Update the [build.gradle.kts](patches/build.gradle.kts) file (Specifically, the 
-   [group of the project](patches/build.gradle.kts#L1), and the [About](patches/build.gradle.kts#L6-L11))
-5. Update the [README.md](README.md) file to be specific of your repo, and update the links in the [issue templates](.github/ISSUE_TEMPLATE).
-6/ Choose a name for your patches project. Keep in mind you must use a name that does not 
-   imply authorship by the Morphe open source project. If unsure, then simply name these
-   patches after yourself ("UserXYZ Morphe patches"). See the [NOTICE](NOTICE) for details. 
-7. (Optional): Add `patches-bundle.png` to the project if you want a custom icon to show in
-   Morphe Manager instead of your GitHub profile avatar.
+2. Enable "Allow GitHub Actions to create and approve pull requests" in your repo Settings > Actions > General > Workflow permissions.
+3. Do development work in the `dev` branch.
+4. Build locally with `./gradlew buildAndroid`.
 
-🎉 You are now ready to start creating patches!
-
-## 🧑‍💻 Usage
+## Usage
 
 To develop and release your Patches using this template:
 
@@ -53,7 +42,7 @@ To develop and release your Patches using this template:
 - When your dev branch is ready and you want a stable release, merge dev branch to main (do not squash, and only merge).
 - **Always use semantic release (release.yml)**. Do not manually upload or creating releases by hand because many files must be updated and release.yml handles everything.
 
-## 🤓 Tips
+## Tips
 - See the [patcher documentation](https://github.com/MorpheApp/morphe-patcher/blob/main/docs/1_patcher_intro.md)
   for more examples of creating patches and fingerprints.
 - Do not manually edit any generated files such as: `patches-list.json`, `patches-bundle.json`, `CHANGELOG.md`.
@@ -72,15 +61,15 @@ To develop and release your Patches using this template:
 
 #### How to use these patches
 
-Click here to add these patches to Morphe: https://morphe.software/add-source?github=xyz-user/xyz-patches
+Click here to add these patches to Morphe: https://morphe.software/add-source?github=NekoGryphou/crunchyroll-pip-patches
 
-Or manually add this repository url as a patch source in Morphe: https://github.com/xyz-user/xyz-patches
+Or manually add this repository url as a patch source in Morphe: https://github.com/NekoGryphou/crunchyroll-pip-patches
 
-### 🛠️ Building
+### Building
 
-To build UserXYZ Patches,
+To build Crunchyroll PiP Patches,
 you can follow the [Morphe documentation](https://github.com/MorpheApp/morphe-documentation).
 
-## 📜 License
+## License
 
-UserXYZ Patches are licensed under the [GNU General Public License v3.0](LICENSE)
+Crunchyroll PiP Patches are licensed under the [GNU General Public License v3.0](LICENSE)
