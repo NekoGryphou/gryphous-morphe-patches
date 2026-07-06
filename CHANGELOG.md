@@ -1,3 +1,9 @@
+## [1.0.0-dev.2](https://github.com/NekoGryphou/crunchyroll-pip-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-07-06)
+
+### 🐛 Bug Fixes
+
+* enter PiP synchronously from watch activity ([d0fcea2](https://github.com/NekoGryphou/crunchyroll-pip-patches/commit/d0fcea2ae5f4007ede2157abb4938da15d26e804))
+
 ## 1.0.0-dev.1 (2026-07-06)
 
 ### ✨ New Features

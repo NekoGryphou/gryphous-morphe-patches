@@ -9,9 +9,9 @@ This repository contains a Morphe patch for `com.crunchyroll.crunchyroid` that e
 ## Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.0.0-dev.1](https://github.com/NekoGryphou/crunchyroll-pip-patches/releases/tag/v1.0.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;2 patches total
+> **[v1.0.0-dev.2](https://github.com/NekoGryphou/crunchyroll-pip-patches/releases/tag/v1.0.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;1 patches total
 <details open>
-<summary>📦 Crunchyroll&nbsp;&nbsp;•&nbsp;&nbsp;2 patches</summary>
+<summary>📦 Crunchyroll&nbsp;&nbsp;•&nbsp;&nbsp;1 patch</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -22,7 +22,6 @@ This repository contains a Morphe patch for `com.crunchyroll.crunchyroid` that e
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Enable Picture-in-Picture](#enable-picture-in-picture) | Enables automatic Android Picture-in-Picture when a Crunchyroll video is actively playing. |  |
-| [Enable Picture-in-Picture manifest](#enable-picture-in-picture-manifest) | Enables Android Picture-in-Picture manifest attributes on Crunchyroll watch activities. |  |
 
 </details>
 
