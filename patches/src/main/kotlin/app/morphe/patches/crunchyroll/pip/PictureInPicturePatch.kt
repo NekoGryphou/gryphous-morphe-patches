@@ -8,9 +8,7 @@ import app.morphe.patches.crunchyroll.shared.COMPATIBILITY_CRUNCHYROLL
 import org.w3c.dom.Element
 
 @Suppress("unused")
-val crunchyrollPictureInPictureManifestPatch = resourcePatch(
-    name = "Enable Picture-in-Picture manifest",
-    description = "Enables Android Picture-in-Picture manifest attributes on Crunchyroll watch activities.",
+private val crunchyrollPictureInPictureManifestPatch = resourcePatch(
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_CRUNCHYROLL)
@@ -85,6 +83,14 @@ val crunchyrollPictureInPicturePatch = bytecodePatch(
                 if-eqz v1, :crunchyroll_pip_continue
                 return-void
                 :crunchyroll_pip_continue
+                invoke-virtual {p0}, Landroid/app/Activity;->isInPictureInPictureMode()Z
+                move-result v0
+                if-eqz v0, :crunchyroll_pip_enter
+                return-void
+                :crunchyroll_pip_enter
+                invoke-super {p0}, Le/k;->onUserLeaveHint()V
+                invoke-virtual {p0}, Lcom/crunchyroll/watchscreen/screen/WatchScreenActivity;->uf()V
+                return-void
             """,
         )
     }
