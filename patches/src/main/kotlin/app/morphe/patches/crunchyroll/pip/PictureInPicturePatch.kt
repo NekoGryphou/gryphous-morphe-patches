@@ -55,7 +55,7 @@ private val crunchyrollPictureInPictureManifestPatch = resourcePatch(
 @Suppress("unused")
 val crunchyrollPictureInPicturePatch = bytecodePatch(
     name = "Enable Picture-in-Picture",
-    description = "Enables automatic Android Picture-in-Picture when a Crunchyroll video is actively playing.",
+    description = "Enables automatic Android Picture-in-Picture when leaving Crunchyroll playback.",
     default = true,
 ) {
     compatibleWith(COMPATIBILITY_CRUNCHYROLL)
@@ -65,31 +65,17 @@ val crunchyrollPictureInPicturePatch = bytecodePatch(
         WatchScreenOnUserLeaveHintFingerprint.method.addInstructions(
             0,
             """
-                invoke-static {}, Lkt/n${'$'}a;->c()Lkt/h;
-                move-result-object v0
-                check-cast v0, Lkt/r;
-                invoke-virtual {v0}, Lkt/r;->getState()Lpu0/e1;
-                move-result-object v0
-                invoke-interface {v0}, Lpu0/e1;->getValue()Ljava/lang/Object;
-                move-result-object v0
-                check-cast v0, Lfv/m;
-                iget-boolean v1, v0, Lfv/m;->a:Z
-                if-nez v1, :crunchyroll_pip_check_ad
-                return-void
-                :crunchyroll_pip_check_ad
-                iget-object v1, v0, Lfv/m;->j:Lqu/c;
-                if-eqz v1, :crunchyroll_pip_continue
-                iget-boolean v1, v1, Lqu/c;->d:Z
-                if-eqz v1, :crunchyroll_pip_continue
-                return-void
-                :crunchyroll_pip_continue
                 invoke-virtual {p0}, Landroid/app/Activity;->isInPictureInPictureMode()Z
                 move-result v0
                 if-eqz v0, :crunchyroll_pip_enter
                 return-void
                 :crunchyroll_pip_enter
                 invoke-super {p0}, Le/k;->onUserLeaveHint()V
-                invoke-virtual {p0}, Lcom/crunchyroll/watchscreen/screen/WatchScreenActivity;->uf()V
+                new-instance v0, Landroid/app/PictureInPictureParams${'$'}Builder;
+                invoke-direct {v0}, Landroid/app/PictureInPictureParams${'$'}Builder;-><init>()V
+                invoke-virtual {v0}, Landroid/app/PictureInPictureParams${'$'}Builder;->build()Landroid/app/PictureInPictureParams;
+                move-result-object v0
+                invoke-virtual {p0, v0}, Landroid/app/Activity;->enterPictureInPictureMode(Landroid/app/PictureInPictureParams;)Z
                 return-void
             """,
         )
