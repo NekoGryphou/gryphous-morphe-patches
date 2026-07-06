@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.0.0...v1.0.1) (2026-07-06)
+
+### 🐛 Bug Fixes
+
+* publish renamed repository metadata ([ce4fe7b](https://github.com/NekoGryphou/gryphous-morphe-patches/commit/ce4fe7bdd7402cb9da5be0a82f06938ba1fb9700))
+
 ## 1.0.0 (2026-07-06)
 
 ### 🐛 Bug Fixes
