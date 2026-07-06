@@ -1,3 +1,9 @@
+## [1.0.0-dev.3](https://github.com/NekoGryphou/crunchyroll-pip-patches/compare/v1.0.0-dev.2...v1.0.0-dev.3) (2026-07-06)
+
+### 🐛 Bug Fixes
+
+* enter PiP with Android framework APIs ([2b8f308](https://github.com/NekoGryphou/crunchyroll-pip-patches/commit/2b8f308156a39fc6fb73a90f9be19d4b892ef3ce))
+
 ## [1.0.0-dev.2](https://github.com/NekoGryphou/crunchyroll-pip-patches/compare/v1.0.0-dev.1...v1.0.0-dev.2) (2026-07-06)
 
 ### 🐛 Bug Fixes
