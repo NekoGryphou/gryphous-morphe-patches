@@ -1,3 +1,15 @@
+## [1.2.0-dev.2](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.2.0-dev.1...v1.2.0-dev.2) (2026-10-16)
+
+### 🐛 Bug Fixes
+
+* support Crunchyroll 3.125.0 and remove AC controls restore ([b0f588e](https://github.com/NekoGryphou/gryphous-morphe-patches/commit/b0f588e14d74b33b0abdeb5e191c63dc17944dc3))
+
+## [1.2.0-dev.1](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.1.0...v1.2.0-dev.1) (2026-09-07)
+
+### ✨ New Features
+
+* **delonghi:** restore AC controls and disable review requests ([855d0f1](https://github.com/NekoGryphou/gryphous-morphe-patches/commit/855d0f1409384006292bcfbe659043d1d1abca8d))
+
 ## [1.1.0](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.0.1...v1.1.0) (2026-08-20)
 
 ### ✨ New Features

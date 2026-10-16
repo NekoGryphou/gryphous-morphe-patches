@@ -7,14 +7,14 @@ Morphe patch bundle for Crunchyroll and De'Longhi Comfort.
 This repository contains Morphe patches that:
 
 - Enable Android Picture-in-Picture for Crunchyroll (`com.crunchyroll.crunchyroid`).
-- Hide the `GetReceivedShares-003` incident popup, remove the login location requirement, and suppress the notification permission prompt in De'Longhi Comfort (`com.ddsx_ayla_android`).
+- Hide the `GetReceivedShares-003` incident popup, remove the login location requirement, and suppress notification permission and app review prompts in De'Longhi Comfort (`com.ddsx_ayla_android`).
 
 ## Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.1.0](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.1.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;4 patches total
+> **[v1.2.0-dev.2](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.2.0-dev.2)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
 <details open>
-<summary>📦 De'Longhi Comfort&nbsp;&nbsp;•&nbsp;&nbsp;3 patches</summary>
+<summary>📦 De'Longhi Comfort&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -26,6 +26,7 @@ This repository contains Morphe patches that:
 |----------|----------------|-----------|
 | [Disable login location requirement](#disable-login-location-requirement) | Allows login and registration without granting location permission. |  |
 | [Disable notification permission prompt](#disable-notification-permission-prompt) | Prevents De'Longhi Comfort from asking to enable notifications. |  |
+| [Disable review request dialog](#disable-review-request-dialog) | Prevents De'Longhi Comfort from asking to rate the app. |  |
 | [Hide shared-devices incident popup](#hide-shared-devices-incident-popup) | Prevents the GetReceivedShares-003 incident popup from appearing. |  |
 
 </details>
@@ -36,8 +37,8 @@ This repository contains Morphe patches that:
 
 **🎯 Supported versions:**
 
-| 3.112.2 |
-| :---: |
+| 3.125.0 | 3.112.2 |
+| :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
