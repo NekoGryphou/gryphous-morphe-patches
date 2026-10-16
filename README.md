@@ -8,14 +8,13 @@ This repository contains Morphe patches that:
 
 - Enable Android Picture-in-Picture for Crunchyroll (`com.crunchyroll.crunchyroid`).
 - Hide the `GetReceivedShares-003` incident popup, remove the login location requirement, and suppress notification permission and app review prompts in De'Longhi Comfort (`com.ddsx_ayla_android`).
-- Restore the selected AC and reload its controls when returning to De'Longhi Comfort.
 
 ## Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.2.0-dev.1](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.2.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v1.2.0-dev.1](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.2.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;5 patches total
 <details open>
-<summary>📦 De'Longhi Comfort&nbsp;&nbsp;•&nbsp;&nbsp;5 patches</summary>
+<summary>📦 De'Longhi Comfort&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
 
 **🎯 Supported versions:**
@@ -29,7 +28,6 @@ This repository contains Morphe patches that:
 | [Disable notification permission prompt](#disable-notification-permission-prompt) | Prevents De'Longhi Comfort from asking to enable notifications. |  |
 | [Disable review request dialog](#disable-review-request-dialog) | Prevents De'Longhi Comfort from asking to rate the app. |  |
 | [Hide shared-devices incident popup](#hide-shared-devices-incident-popup) | Prevents the GetReceivedShares-003 incident popup from appearing. |  |
-| [Restore AC controls on return](#restore-ac-controls-on-return) | Restores the selected air conditioner and reloads its controls when returning to De'Longhi Comfort. |  |
 
 </details>
 
@@ -39,8 +37,8 @@ This repository contains Morphe patches that:
 
 **🎯 Supported versions:**
 
-| 3.112.2 |
-| :---: |
+| 3.125.0 | 3.112.2 |
+| :---: | :---: |
 
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|

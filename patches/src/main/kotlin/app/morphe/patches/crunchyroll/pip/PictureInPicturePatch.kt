@@ -1,10 +1,12 @@
 package app.morphe.patches.crunchyroll.pip
 
 import app.morphe.patcher.extensions.InstructionExtensions.addInstructions
+import app.morphe.patcher.extensions.InstructionExtensions.getInstruction
 import app.morphe.patcher.patch.PatchException
 import app.morphe.patcher.patch.bytecodePatch
 import app.morphe.patcher.patch.resourcePatch
 import app.morphe.patches.crunchyroll.shared.COMPATIBILITY_CRUNCHYROLL
+import com.android.tools.smali.dexlib2.iface.instruction.ReferenceInstruction
 import org.w3c.dom.Element
 
 @Suppress("unused")
@@ -62,7 +64,15 @@ val crunchyrollPictureInPicturePatch = bytecodePatch(
     dependsOn(crunchyrollPictureInPictureManifestPatch)
 
     execute {
-        WatchScreenOnUserLeaveHintFingerprint.method.addInstructions(
+        val fingerprint = WatchScreenOnUserLeaveHintFingerprint
+        val method = fingerprint.method
+        val superCall = method.getInstruction<ReferenceInstruction>(
+            fingerprint.instructionMatches.first().index,
+        ).reference
+        if ((method.implementation?.registerCount ?: 0) < 2) {
+            throw PatchException("Crunchyroll onUserLeaveHint has no scratch register for PiP entry.")
+        }
+        method.addInstructions(
             0,
             """
                 invoke-virtual {p0}, Landroid/app/Activity;->isInPictureInPictureMode()Z
@@ -70,7 +80,7 @@ val crunchyrollPictureInPicturePatch = bytecodePatch(
                 if-eqz v0, :crunchyroll_pip_enter
                 return-void
                 :crunchyroll_pip_enter
-                invoke-super {p0}, Le/k;->onUserLeaveHint()V
+                invoke-super {p0}, $superCall
                 new-instance v0, Landroid/app/PictureInPictureParams${'$'}Builder;
                 invoke-direct {v0}, Landroid/app/PictureInPictureParams${'$'}Builder;-><init>()V
                 invoke-virtual {v0}, Landroid/app/PictureInPictureParams${'$'}Builder;->build()Landroid/app/PictureInPictureParams;

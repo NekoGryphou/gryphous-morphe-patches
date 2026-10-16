@@ -9,6 +9,9 @@ internal val COMPATIBILITY_CRUNCHYROLL = Compatibility(
     appIconColor = 0xff5c00,
     targets = listOf(
         AppTarget(
+            version = "3.125.0",
+        ),
+        AppTarget(
             version = "3.112.2",
         ),
     ),
