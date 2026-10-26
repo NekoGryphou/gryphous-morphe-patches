@@ -14,7 +14,7 @@ This repository contains Morphe patches that:
 ## Patches list
 
 <!-- PATCHES_START EXPANDED -->
-> **[v1.3.0](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.3.0)**&nbsp;&nbsp;•&nbsp;&nbsp;`main`&nbsp;&nbsp;•&nbsp;&nbsp;6 patches total
+> **[v1.4.0-dev.1](https://github.com/NekoGryphou/gryphous-morphe-patches/releases/tag/v1.4.0-dev.1)**&nbsp;&nbsp;•&nbsp;&nbsp;`dev`&nbsp;&nbsp;•&nbsp;&nbsp;13 patches total
 <details open>
 <summary>📦 De'Longhi Comfort&nbsp;&nbsp;•&nbsp;&nbsp;4 patches</summary>
 <br>
@@ -45,6 +45,27 @@ This repository contains Morphe patches that:
 | 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
 |----------|----------------|-----------|
 | [Enable Picture-in-Picture](#enable-picture-in-picture) | Enables automatic Android Picture-in-Picture when leaving Crunchyroll playback. |  |
+
+</details>
+
+<details open>
+<summary>📦 Smart Life&nbsp;&nbsp;•&nbsp;&nbsp;7 patches</summary>
+<br>
+
+**🎯 Supported versions:**
+
+| 7.12.0 |
+| :---: |
+
+| 💊&nbsp;Patch | 📜&nbsp;Description | ⚙️&nbsp;Options |
+|----------|----------------|-----------|
+| [Hide AI Input Bar](#hide-ai-input-bar) | Adds a setting to hide the shared AI input bar and its floating/Home containers throughout the app. |  |
+| [Hide Centre d’avantages](#hide-centre-d-avantages) | Adds an independent setting to hide the Centre d’avantages (Rewards Hub) Profile entry. |  |
+| [Hide Explorer Tab](#hide-explorer-tab) | Adds a setting to remove Explorer from navigation, with safe selection and fragment restoration. |  |
+| [Hide Home Plus](#hide-home-plus) | Adds a setting to hide the Home header Plus badge while keeping the separate add (+) button. |  |
+| [Hide Home Recommendations](#hide-home-recommendations) | Adds a setting to remove the Home Recommended card group, including its header and spacing. |  |
+| [Hide Intelligence Recommendations](#hide-intelligence-recommendations) | Adds an independent setting to hide the Intelligence Recommended page. |  |
+| [Hide Tuya AI Web Version](#hide-tuya-ai-web-version) | Adds a setting to hide only the Tuya AI Web Version entry in Profile. |  |
 
 </details>
 
