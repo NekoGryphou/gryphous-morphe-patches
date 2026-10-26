@@ -19,3 +19,6 @@ pluginManagement {
 plugins {
     id("app.morphe.patches") version "1.3.4"
 }
+
+include(":smartlife-runtime")
+project(":smartlife-runtime").projectDir = file("runtime/smartlife")

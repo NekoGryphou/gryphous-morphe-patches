@@ -3,7 +3,7 @@ group = "io.github.nekogryphou.morphe.patches"
 patches {
     about {
         name = "Gryphou's Morphe Patches"
-        description = "Android app patches for Crunchyroll, De'Longhi Comfort, and PETKIT."
+        description = "Android app patches for Crunchyroll, De'Longhi Comfort, PETKIT, and Smart Life."
         source = "https://github.com/NekoGryphou/gryphous-morphe-patches"
         author = "NekoGryphou"
         contact = "darkosdash@gmail.com"
@@ -22,6 +22,15 @@ dependencies {
 }
 
 tasks {
+    processResources {
+        dependsOn(":smartlife-runtime:dex")
+        from(project(":smartlife-runtime").layout.buildDirectory.dir("dex")) {
+            include("classes.dex")
+            into("extensions")
+            rename("classes.dex", "smartlife.mpe")
+        }
+    }
+
     register<JavaExec>("generatePatchesList") {
         description = "Build patch with patch list"
 
