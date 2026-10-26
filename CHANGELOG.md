@@ -1,3 +1,9 @@
+## [1.4.0-dev.1](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.3.0...v1.4.0-dev.1) (2026-10-26)
+
+### ✨ New Features
+
+* **smartlife:** add seven configurable native UI patches ([db05f88](https://github.com/NekoGryphou/gryphous-morphe-patches/commit/db05f889bc423f951b7216fe32c60aa0f58c42b6))
+
 ## [1.3.0](https://github.com/NekoGryphou/gryphous-morphe-patches/compare/v1.2.0...v1.3.0) (2026-10-26)
 
 ### ✨ New Features
